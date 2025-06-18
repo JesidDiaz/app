@@ -1,15 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import streamlit.runtime.scriptrunner as scriptrunner
-if not scriptrunner.script_run_ctx:
-    import streamlit.web.bootstrap
-    scriptrunner.script_run_ctx = streamlit.web.bootstrap._init_script_run_ctx()
 import streamlit as st
+import random  # Solo si lo usas para tus widgets
 
 st.header('Lanzar una moneda')
 import pandas as pd
 import scipy.stats
-import streamlit as st
 import time
 
 # estas son variables de estado que se conservan cuando Streamlin vuelve a ejecutar este script
